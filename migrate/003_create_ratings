@@ -1,0 +1,9 @@
+class Ratings < ActiveRecord::Migration
+	def change 
+		create_table :ratings do |t|
+			t.string :rating
+			t.integer :movie_id
+			t.integer :user_id
+		end
+	end
+end
